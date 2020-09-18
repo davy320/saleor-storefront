@@ -1,4 +1,5 @@
-version: 1 frontend:
+version: 1
+frontend:
   phases:
     build:
       commands:
@@ -12,12 +13,13 @@ version: 1 frontend:
         - npx lhci autorun --upload.target=temporary-public-storage || echo "LHCI failed!"
   artifacts:
     # IMPORTANT - Please verify your build output directory
-    baseDirectory: dist/
+    baseDirectory: dist
     files:
       - '**/*'
   cache:
     paths:
-      - node_modules/**/* test:
+      - node_modules/**/*
+test:
   artifacts:
     baseDirectory: cypress
     configFilePath: '**/mochawesome.json'
@@ -35,10 +37,8 @@ version: 1 frontend:
         - 'npx wait-on http://localhost:8080'
     test:
       commands:
-        - 'npx cypress run --reporter mochawesome --reporter-options
-"reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss"'
+        - 'npx cypress run --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss"'
     postTest:
       commands:
-        - npx mochawesome-merge cypress/report/mochawesome-report/mochawesome*.json > 
-cypress/report/mochawesome.json
+        - npx mochawesome-merge cypress/report/mochawesome-report/mochawesome*.json > cypress/report/mochawesome.json
         - npx pm2 kill
