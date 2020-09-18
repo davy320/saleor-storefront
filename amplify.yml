@@ -12,7 +12,7 @@ version: 1 frontend:
         - npx lhci autorun --upload.target=temporary-public-storage || echo "LHCI failed!"
   artifacts:
     # IMPORTANT - Please verify your build output directory
-    baseDirectory: /
+    baseDirectory: dist/
     files:
       - '**/*'
   cache:
