@@ -7,6 +7,7 @@ frontend:
     build:
       commands:
         - npm run build
+        - cp googled080a25d88c9d792.html dist/
   artifacts:
     baseDirectory: dist
     files:
