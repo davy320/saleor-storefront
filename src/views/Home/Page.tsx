@@ -5,7 +5,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 
 import { Button, Loader, ProductsFeatured } from "../../components";
-import { generateCategoryUrl } from "../../core/utils";
+import { generateCategoryUrl, generateCollectionUrl } from "../../core/utils";
 
 import {
   ProductsList_categories,
@@ -48,7 +48,7 @@ const Page: React.FC<{
           </div>
           <div>
             <span className="home-page__hero__title">
-              <h4>We sell factory second appliances at very low prices.</h4>
+              <h3>We sell factory second appliances at very low prices.</h3>
             </span>
           </div>
         </div>
@@ -58,12 +58,9 @@ const Page: React.FC<{
           ) : (
             categoriesExist() && (
               <Link
-                to={generateCategoryUrl(
-                  categories.edges[0].node.id,
-                  categories.edges[0].node.name
-                )}
+                to={'collection/awesome-deals/1/'}
               >
-                <Button>Shop sale</Button>
+                <Button>Shop deals</Button>
               </Link>
             )
           )}
