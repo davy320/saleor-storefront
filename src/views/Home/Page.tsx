@@ -5,7 +5,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 
 import { Button, Loader, ProductsFeatured } from "../../components";
-import { generateCategoryUrl, generateCollectionUrl } from "../../core/utils";
+import { generateCategoryUrl } from "../../core/utils";
 
 import {
   ProductsList_categories,
