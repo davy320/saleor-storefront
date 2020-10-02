@@ -35,7 +35,7 @@
     &__title {
       background-color: $white;
       display: inline-block;
-      transform: skew(45deg);
+      transform: skew(0deg);
       padding: $spacer $spacer * 3;
       margin-bottom: $spacer / 2;
 
@@ -43,10 +43,26 @@
         padding: 0.6rem $spacer;
         width: calc(100% - 4rem);
       }
+      h3 {
+        display: inline-block;
+        transform: skew(0deg);
+        font-weight: $bold-font-weight;
+        text-transform: uppercase;
+        color: $blue;
+        font-size: $h3-font-size;
+        font-weight: 900;
 
+        @media (max-width: $small-screen) {
+          font-size: $h4-font-size;
+        }
+
+        @media (min-width: $small-screen) and (max-width: $medium-screen) {
+          font-size: 48px;
+        }
+      }
       h1 {
         display: inline-block;
-        transform: skew(-45deg);
+        transform: skew(0deg);
         font-weight: $bold-font-weight;
         text-transform: uppercase;
         color: $blue;

@@ -43,12 +43,12 @@ const Page: React.FC<{
         <div className="home-page__hero-text">
           <div>
             <span className="home-page__hero__title">
-              <h1>Final reduction</h1>
+              <h1>Shop Awesome deals</h1>
             </span>
           </div>
           <div>
             <span className="home-page__hero__title">
-              <h1>Up to 70% off sale</h1>
+              <h3>We sell factory second appliances at very low prices.</h3>
             </span>
           </div>
         </div>
@@ -58,12 +58,9 @@ const Page: React.FC<{
           ) : (
             categoriesExist() && (
               <Link
-                to={generateCategoryUrl(
-                  categories.edges[0].node.id,
-                  categories.edges[0].node.name
-                )}
+                to={'collection/awesome-deals/1/'}
               >
-                <Button>Shop sale</Button>
+                <Button>Shop deals</Button>
               </Link>
             )
           )}
