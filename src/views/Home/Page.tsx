@@ -43,12 +43,12 @@ const Page: React.FC<{
         <div className="home-page__hero-text">
           <div>
             <span className="home-page__hero__title">
-              <h1>Final reduction</h1>
+              <h1>Shop Awesome deals</h1>
             </span>
           </div>
           <div>
             <span className="home-page__hero__title">
-              <h1>Up to 70% off sale</h1>
+              <h4>We sell factory second appliances at very low prices.</h4>
             </span>
           </div>
         </div>

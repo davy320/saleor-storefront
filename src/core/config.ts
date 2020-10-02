@@ -31,9 +31,9 @@ export const SOCIAL_MEDIA = [
 export const META_DEFAULTS = {
   custom: [],
   description:
-    "Open-source PWA storefront built with Saleor's e-commerce GraphQL API. Written with React and TypeScript.",
+    "Buy factory 2nd Appliances including Fridges, Washing machines and TVs at very cheap prices. Delivery and pickup available in Melbourne.",
   image: `${window.location.origin}${require("../images/logo.svg")}`,
-  title: "Demo PWA Storefront – Saleor Commerce",
+  title: "Go-Get Appliances Australia",
   type: "website",
   url: window.location.origin,
 };
