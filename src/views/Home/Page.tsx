@@ -48,7 +48,7 @@ const Page: React.FC<{
           </div>
           <div>
             <span className="home-page__hero__title">
-              <h3>We sell factory second appliances at very low prices.</h3>
+              <h3>We sell factory second and refurbished appliances at very low prices.</h3>
             </span>
           </div>
         </div>
