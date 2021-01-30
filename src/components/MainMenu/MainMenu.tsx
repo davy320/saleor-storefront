@@ -155,9 +155,9 @@ const MainMenu: React.FC = () => {
             </TypedMainMenuQuery>
           </div>
 
-          <div className="main-menu__center">
+          <div style={{"height": "300px"}} className="main-menu__center">
             <Link to={appPaths.baseUrl}>
-              <ReactSVG path={logoImg} />
+              <ReactSVG svgStyle={{"height": "300px"}} path={logoImg} />
             </Link>
           </div>
 
